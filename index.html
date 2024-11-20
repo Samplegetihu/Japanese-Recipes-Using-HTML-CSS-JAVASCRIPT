@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Japanese Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+  <div class="logo">
+    <h1>Japanese Recipes</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#top">Top</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2>Popular Categories</h2>
+    <div class="category-list">
+      <div class="category-item" onclick="filterCategory('sushi')">
+        <a href="#sushi-recipe">
+          <img src="img\sushi.webp" alt="Sushi">
+          <p>Sushi</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('ramen')">
+        <a href="#ramen-recipe">
+          <img src="img\Ramen.jpg" alt="Ramen">
+          <p>Ramen</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('tempura')">
+        <a href="#tempura-recipe">
+          <img src="img\tempura.jpg" alt="Tempura">
+          <p>Tempura</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('miso-soup')">
+        <a href="#miso-soup-recipe">
+          <img src="img\miso-soup.jpg" alt="Miso Soup">
+          <p>Miso Soup</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('gyoza')">
+        <a href="#gyoza-recipe">
+          <img src="img\gyoza.jpg" alt="Gyoza">
+          <p>Gyoza</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('takoyaki')">
+        <a href="#takoyaki-recipe">
+          <img src="img\takoyaki.jpg" alt="takoyaki">
+          <p>Takoyaki</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('katsudon')">
+        <a href="#katsudon-recipe">
+          <img src="img\katsudon.jpg" alt="katsudon">
+          <p>katsudon</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('onigiri')">
+        <a href="#onigiri-recipe">
+          <img src="img\onigiri.jpg" alt="onigiri">
+          <p>onigiri</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('yaki dango')">
+        <a href="#yaki dango-recipe">
+          <img src="img\yaki dango.jpg" alt="yaki dango">
+          <p>Yaki Dango</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('taiyaki')">
+        <a href="#taiyaki-recipe">
+          <img src="img\taiyaki.jpg" alt="taiyaki">
+          <p>Taiyaki</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('ebi-fry')">
+        <a href="#ebi-fry-recipe">
+          <img src="img\ebi-fry.jpg" alt="ebi-fry">
+          <p>Ebi Fry</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('tamagoyaki')">
+        <a href="#tamagoyaki-recipe">
+          <img src="img\tamagoyaki.jpg" alt="tamagoyaki">
+          <p>Tamagoyaki</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('Shabu-Shabu')">
+        <a href="#Shabu-Shabu-recipe">
+          <img src="img\shabu-shabu.jpg" alt="Shabu-Shabu">
+          <p>Shabu Shabu Hot Pot</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('omurice')">
+        <a href="#omurice-recipe">
+          <img src="img\omurice.jpg" alt="omurice">
+          <p>omurice</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('Okonomiyaki')">
+        <a href="#Okonomiyaki-recipe">
+          <img src="img\okonomiyaki.jpg" alt="Okonomiyaki">
+          <p>Okonomiyaki</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('yakitori')">
+        <a href="#yakitori-recipe">
+          <img src="img\yakitori.jpg" alt="yakitori">
+          <p>yakitori</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('soba')">
+        <a href="#soba-recipe">
+          <img src="img\soba.jpg" alt="soba">
+          <p>soba</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('udon')">
+        <a href="#udon-recipe">
+          <img src="img\udon.jpg" alt="udon">
+          <p>udon</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('sashimi')">
+        <a href="#sashimi-recipe">
+          <img src="img\sashimi.jpg" alt="sashimi">
+          <p>sashimi</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('tofu')">
+        <a href="#tofu-recipe">
+          <img src="img\tofu.jpg" alt="tofu">
+          <p>tofu</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('zenzai')">
+        <a href="#zenzai-recipe">
+          <img src="img\zenzai.jpg" alt="zenzai">
+          <p>zenzai</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('oshiruko')">
+        <a href="#oshiruko-recipe">
+          <img src="img\oshiruko.jpg" alt="oshiruko">
+          <p>oshiruko</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('maki')">
+        <a href="#maki-recipe">
+          <img src="img\maki.jpg" alt="maki">
+          <p>maki</p>
+        </a>
+      </div>
+
+      <div class="category-item" onclick="filterCategory('chawanmushi')">
+        <a href="#chawanmushi-recipe">
+          <img src="img\chawanmushi.jpg" alt="chawanmushi">
+          <p>Chawanmushi</p>
+        </a>
+      </div>
+      <div class="category-item" onclick="filterCategory('tonkatsu')">
+        <a href="#tonkatsu-recipe"></a>
+        <img src="img\Tonkatsu.jpg" alt="tonkatsu">
+        <p>Tonkatsu</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Recipes Section -->
+  <section class="recipes" id="featured-recipes">
+    <h2>Featured Recipes</h2>
+    <div class="recipe-list">
+      <!-- 25 Recipe Items -->
+      <div class="recipe-item" id="sushi-recipe" data-category="sushi">
+        <img src="img\sushi.webp" alt="Sushi Recipe">
+        <h2>Sushi Recipe</h2>
+        <h2>How to Make Sushi at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Sushi rice</strong>: 1 cup sushi rice, 1 1/4 cups water, 2 tbsp rice vinegar, 1 tbsp sugar, 1
+            tsp salt</li>
+          <li><strong>Fillings</strong>: Sushi-grade fish (tuna, salmon), vegetables (cucumber, avocado), nori
+            (seaweed)</li>
+          <li><strong>Condiments</strong>: Soy sauce, wasabi, pickled ginger</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Bamboo sushi mat</li>
+          <li>Sharp knife</li>
+          <li>Rice cooker or pot</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Cook the Rice</strong>: Rinse and cook sushi rice. Season with a vinegar-sugar-salt mix and cool
+            to room temp.</li>
+          <li><strong>Prepare Fillings</strong>: Slice fish and vegetables into thin strips.</li>
+          <li><strong>Roll Sushi</strong>:
+            <ul>
+              <li>Place nori on a bamboo mat.</li>
+              <li>Spread rice thinly on nori, leaving an inch at the top.</li>
+              <li>Add fillings, then roll tightly.</li>
+              <li>Wet the top edge to seal.</li>
+            </ul>
+          </li>
+          <li><strong>Slice & Serve</strong>: Slice rolls into bite-sized pieces. Serve with soy sauce, wasabi, and
+            pickled ginger.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>For nigiri, form rice into small ovals and top with fish.</p>
+        <p><strong>Enjoy your homemade sushi!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="ramen-recipe" data-category="ramen">
+        <img src="img\Ramen.jpg" alt="Ramen Recipe">
+        <h2>Ramen Recipe</h2>
+        <h2>How to Make Ramen at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Noodles</strong>: 200g fresh ramen noodles</li>
+          <li><strong>Broth</strong>: 4 cups chicken or pork broth, soy sauce, miso, and garlic</li>
+          <li><strong>Toppings</strong>: Soft-boiled egg, sliced pork, green onions, nori, bamboo shoots</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Large pot</li>
+          <li>Soup ladle</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Prepare Broth</strong>: Simmer broth with soy sauce, miso, and garlic for 20 mins.</li>
+          <li><strong>Cook Noodles</strong>: Boil noodles in water until al dente, then drain.</li>
+          <li><strong>Assemble</strong>:
+            <ul>
+              <li>Place noodles in a bowl.</li>
+              <li>Ladle hot broth over noodles.</li>
+              <li>Add toppings.</li>
+            </ul>
+          </li>
+          <li><strong>Serve</strong>: Garnish and enjoy hot!</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Use homemade broth for an authentic taste.</p>
+        <p><strong>Enjoy your homemade ramen!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="tempura-recipe" data-category="tempura">
+        <img src="img\tempura.jpg" alt="Tempura Recipe">
+        <h2>Tempura Recipe</h2>
+        <h2>How to Make Tempura at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Batter</strong>: 1 cup flour, 1 cup cold water, 1 egg</li>
+          <li><strong>Fillings</strong>: Shrimp, vegetables (sweet potato, zucchini, mushroom)</li>
+          <li><strong>Condiments</strong>: Tempura dipping sauce</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Mixing bowl</li>
+          <li>Deep fryer or pot with oil</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Prepare Batter</strong>: Mix cold water and egg; add flour lightly to avoid lumps.</li>
+          <li><strong>Heat Oil</strong>: Heat oil to 180°C (350°F).</li>
+          <li><strong>Dip & Fry</strong>:
+            <ul>
+              <li>Dip shrimp and veggies in batter.</li>
+              <li>Fry until golden and crispy.</li>
+            </ul>
+          </li>
+          <li><strong>Serve</strong>: Serve with tempura dipping sauce.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Keep the batter cold for extra crispiness.</p>
+        <p><strong>Enjoy your crispy tempura!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="miso-soup-recipe" data-category="miso-soup">
+        <img src="img\miso-soup.jpg" alt="Miso Soup Recipe">
+        <h2>Miso Soup Recipe</h2>
+        <h2>How to Make Miso Soup at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Broth</strong>: 4 cups dashi broth</li>
+          <li><strong>Miso Paste</strong>: 3 tbsp white or red miso paste</li>
+          <li><strong>Add-ins</strong>: Tofu cubes, seaweed, green onions</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Saucepan</li>
+          <li>Soup ladle</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Heat Dashi</strong>: Warm the dashi broth in a saucepan.</li>
+          <li><strong>Add Miso Paste</strong>: Dissolve miso paste in a small amount of broth, then add back to the
+            pan.</li>
+          <li><strong>Add Tofu & Seaweed</strong>: Gently add tofu and seaweed; heat without boiling.</li>
+          <li><strong>Serve</strong>: Garnish with green onions and serve warm.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Avoid boiling the soup after adding miso paste to preserve its flavor.</p>
+        <p><strong>Enjoy your miso soup!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="gyoza-recipe" data-category="gyoza">
+        <img src="img\gyoza.jpg" alt="Gyoza Recipe">
+        <h2>Gyoza Recipe</h2>
+        <h2>How to Make Gyoza at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Filling</strong>: 1 cup ground pork, 1/2 cup cabbage (minced), green onion, garlic, ginger, soy
+            sauce</li>
+          <li><strong>Wrappers</strong>: Gyoza wrappers</li>
+          <li><strong>Condiments</strong>: Soy sauce, rice vinegar, sesame oil for dipping sauce</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Mixing bowl</li>
+          <li>Non-stick skillet</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Prepare Filling</strong>: Mix pork, cabbage, green onion, garlic, ginger, and soy sauce.</li>
+          <li><strong>Fill Wrappers</strong>: Place filling in gyoza wrappers and seal edges with water.</li>
+          <li><strong>Cook Gyoza</strong>:
+            <ul>
+              <li>Heat skillet with oil, place gyoza flat-side down.</li>
+              <li>Add water, cover and steam for a few minutes until water evaporates.</li>
+            </ul>
+          </li>
+          <li><strong>Serve</strong>: Serve with dipping sauce.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Use a pleated fold to seal gyoza for a traditional look.</p>
+        <p><strong>Enjoy your homemade gyoza!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="takoyaki-recipe" data-category="takoyaki">
+        <img src="img\takoyaki.jpg" alt="Takoyaki Recipe">
+        <h2>Takoyaki Recipe</h2>
+        <h2>How to Make Takoyaki at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Batter</strong>: 1 cup flour, 1 1/2 cups dashi, 2 eggs</li>
+          <li><strong>Fillings</strong>: Octopus pieces, green onion, pickled ginger</li>
+          <li><strong>Condiments</strong>: Takoyaki sauce, mayonnaise, bonito flakes</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Takoyaki pan</li>
+          <li>Skewers or chopsticks</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Prepare Batter</strong>: Mix flour, dashi, and eggs to form a smooth batter.</li>
+          <li><strong>Heat Pan</strong>: Oil takoyaki pan and heat.</li>
+          <li><strong>Cook Takoyaki</strong>:
+            <ul>
+              <li>Pour batter into pan, add octopus and fillings.</li>
+              <li>Turn balls with skewers until golden.</li>
+            </ul>
+          </li>
+          <li><strong>Serve</strong>: Drizzle with sauce, mayo, and top with bonito flakes.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Use a generous amount of oil for a crispy texture.</p>
+        <p><strong>Enjoy your takoyaki!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="katsudon-recipe" data-category="katsudon">
+        <img src="img\katsudon.jpg" alt="Katsudon Recipe">
+        <h2>Katsudon Recipe</h2>
+        <h2>How to Make Katsudon at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Pork Cutlet</strong>: 1 pork cutlet, flour, egg, panko breadcrumbs</li>
+          <li><strong>Sauce</strong>: 1/2 cup dashi, 1 tbsp soy sauce, 1 tbsp mirin</li>
+          <li><strong>Other</strong>: 1/2 onion, 1 egg, steamed rice</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Frying pan</li>
+          <li>Small pot</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Prepare Pork Cutlet</strong>: Coat cutlet in flour, egg, and breadcrumbs, then fry until golden.
+          </li>
+          <li><strong>Simmer Sauce</strong>: Combine dashi, soy sauce, and mirin in a pan with sliced onion; simmer
+            until soft.</li>
+          <li><strong>Add Cutlet & Egg</strong>:
+            <ul>
+              <li>Place fried cutlet in sauce.</li>
+              <li>Pour beaten egg over and cook until just set.</li>
+            </ul>
+          </li>
+          <li><strong>Serve</strong>: Serve over rice and enjoy.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Use fresh panko for a crispier cutlet.</p>
+        <p><strong>Enjoy your katsudon!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="onigiri-recipe" data-category="onigiri">
+        <img src="img\onigiri.jpg" alt="Onigiri Recipe">
+        <h2>Onigiri Recipe</h2>
+        <h2>How to Make Onigiri at Home</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li><strong>Rice</strong>: 2 cups sushi rice</li>
+          <li><strong>Fillings</strong>: Pickled plum, salmon, tuna mayo</li>
+          <li><strong>Wrapper</strong>: Nori sheets</li>
+        </ul>
+        <h2>Tools:</h2>
+        <ul>
+          <li>Mixing bowl</li>
+          <li>Plastic wrap or mold</li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li><strong>Cook Rice</strong>: Cook and cool sushi rice.</li>
+          <li><strong>Shape Onigiri</strong>: Place filling in the center of rice ball; shape with hands or mold.</li>
+          <li><strong>Wrap with Nori</strong>: Wrap rice ball with a piece of nori.</li>
+          <li><strong>Serve</strong>: Serve as is or with dipping sauce.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Use wet hands to prevent rice from sticking.</p>
+        <p><strong>Enjoy your onigiri!</strong></p>
+      </div>
+
+      <div class="recipe-item" id="yaki-dango-recipe" data-category="yaki-dango">
+        <img src="img\yaki dango.jpg" alt="Yaki Dango">
+        <h3>Yaki Dango Recipe</h3>
+        <p>Grilled skewered rice dumplings with sweet sauce.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 cup glutinous rice flour</li>
+          <li>3/4 cup water</li>
+          <li>Soy sauce and sugar for sauce</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Mix rice flour and water to form a smooth dough.</li>
+          <li>Shape into small balls and steam for 10 minutes.</li>
+          <li>Skewer dumplings and grill until lightly charred.</li>
+          <li>Brush with a sweet soy sauce glaze before serving.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="taiyaki-recipe" data-category="taiyaki">
+        <img src="img\taiyaki.jpg" alt="Taiyaki">
+        <h3>Taiyaki Recipe</h3>
+        <p>Fish-shaped waffle filled with sweet fillings.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 cup pancake batter</li>
+          <li>Sweet red bean paste (or other fillings)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Heat taiyaki mold and lightly oil.</li>
+          <li>Pour batter into mold, add filling, and cover with more batter.</li>
+          <li>Cook until golden on each side, then remove and serve warm.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="ebi-fry-recipe" data-category="ebi-fry">
+        <img src="img\ebi-fry.jpg" alt="Ebi Fry">
+        <h3>Ebi Fry Recipe</h3>
+        <p>Crunchy, deep-fried shrimp served with tartar sauce.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>8 large shrimp, peeled and deveined</li>
+          <li>1 cup panko breadcrumbs</li>
+          <li>1 egg, beaten</li>
+          <li>Flour for coating</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Coat shrimp in flour, dip in egg, then roll in panko.</li>
+          <li>Deep fry until golden and crispy, then drain on paper towels.</li>
+          <li>Serve with tartar sauce on the side.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="tamagoyaki-recipe" data-category="tamagoyaki">
+        <img src="img\tamagoyaki.jpg" alt="Tamagoyaki">
+        <h3>Tamagoyaki Recipe</h3>
+        <p>Japanese rolled omelette, soft and sweet.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>4 eggs</li>
+          <li>2 tbsp sugar</li>
+          <li>1 tbsp soy sauce</li>
+          <li>1 tsp mirin</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Beat eggs with sugar, soy sauce, and mirin.</li>
+          <li>Pour a thin layer into a pan and cook until slightly set.</li>
+          <li>Roll up and push to the side, then add more egg and repeat.</li>
+          <li>Once rolled, slice and serve.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="shabu-shabu-recipe" data-category="shabu-shabu">
+        <img src="img\shabu-shabu.jpg" alt="Shabu Shabu">
+        <h3>Shabu Shabu Recipe</h3>
+        <p>Hot pot with thinly sliced beef and vegetables.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>4 cups dashi broth</li>
+          <li>Thinly sliced beef</li>
+          <li>Assorted vegetables: mushrooms, napa cabbage, tofu</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Simmer dashi broth in a hot pot.</li>
+          <li>Dip beef and vegetables briefly until cooked to taste.</li>
+          <li>Serve with dipping sauces like ponzu or sesame sauce.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="omurice-recipe" data-category="omurice">
+        <img src="img\omurice.jpg" alt="Omurice">
+        <h3>Omurice Recipe</h3>
+        <p>Fried rice wrapped in a fluffy omelette.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 cup cooked rice</li>
+          <li>1/2 cup chicken, diced</li>
+          <li>2 tbsp ketchup</li>
+          <li>2 eggs</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Saute chicken and rice, then stir in ketchup.</li>
+          <li>Whisk eggs and cook in a pan to form an omelette.</li>
+          <li>Place fried rice on omelette and fold over to serve.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="okonomiyaki-recipe" data-category="okonomiyaki">
+        <img src="img\okonomiyaki.jpg" alt="Okonomiyaki">
+        <h3>Okonomiyaki Recipe</h3>
+        <p>Japanese savory pancake with cabbage and toppings.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 cup flour</li>
+          <li>1 egg</li>
+          <li>1 cup shredded cabbage</li>
+          <li>Okonomiyaki sauce and mayo for topping</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Mix flour, egg, and cabbage into a batter.</li>
+          <li>Cook batter on a skillet until both sides are golden.</li>
+          <li>Top with okonomiyaki sauce, mayo, and other desired toppings.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="yakitori-recipe" data-category="yakitori">
+        <img src="img\yakitori.jpg" alt="Yakitori">
+        <h3>Yakitori Recipe</h3>
+        <p>Grilled chicken skewers with savory tare sauce.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>8 chicken thigh pieces, cut into chunks</li>
+          <li>Tare sauce (soy sauce, mirin, sugar)</li>
+          <li>Skewers</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Thread chicken onto skewers and brush with tare sauce.</li>
+          <li>Grill skewers until cooked through, brushing with sauce.</li>
+          <li>Serve hot with extra tare sauce if desired.</li>
+        </ol>
+      </div>
+
+
+      <div class="recipe-item" id="soba-recipe" data-category="soba">
+        <img src="img\soba.jpg" alt="Soba">
+        <h3>Soba Recipe</h3>
+        <p>Thin buckwheat noodles served cold or hot.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>200g soba noodles</li>
+          <li>1/2 cup dashi stock</li>
+          <li>2 tbsp soy sauce</li>
+          <li>1 tbsp mirin</li>
+          <li>Chopped green onions and nori (for garnish)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Cook soba noodles in boiling water until tender, then drain and rinse under cold water.</li>
+          <li>For dipping sauce, mix dashi, soy sauce, and mirin.</li>
+          <li>Serve noodles cold with dipping sauce, green onions, and nori on the side.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="udon-recipe" data-category="udon">
+        <img src="img\udon.jpg" alt="Udon">
+        <h3>Udon Recipe</h3>
+        <p>Thick, chewy noodles served in a hot broth.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>200g udon noodles</li>
+          <li>4 cups dashi broth</li>
+          <li>2 tbsp soy sauce</li>
+          <li>1 tbsp mirin</li>
+          <li>Chopped green onions for garnish</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Cook udon noodles as per package instructions, then drain.</li>
+          <li>In a pot, combine dashi, soy sauce, and mirin, bringing to a simmer.</li>
+          <li>Place noodles in a bowl, pour hot broth over, and garnish with green onions.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="sashimi-recipe" data-category="sashimi">
+        <img src="img\sashimi.jpg" alt="Sashimi">
+        <h3>Sashimi Recipe</h3>
+        <p>Fresh raw fish served thinly sliced.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>200g fresh sashimi-grade fish (e.g., tuna, salmon)</li>
+          <li>Soy sauce for dipping</li>
+          <li>Wasabi and pickled ginger (optional)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Thinly slice fish using a sharp knife.</li>
+          <li>Arrange slices on a plate with soy sauce, wasabi, and ginger on the side.</li>
+          <li>Serve immediately while fresh.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="tofu-recipe" data-category="tofu">
+        <img src="img\tofu.jpg" alt="Tofu">
+        <h3>Tofu Recipe</h3>
+        <p>Versatile soy-based protein in a variety of dishes.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 block of firm tofu</li>
+          <li>1 tbsp soy sauce</li>
+          <li>1 tbsp mirin</li>
+          <li>1 green onion, sliced</li>
+          <li>Sesame seeds for garnish</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Press tofu to remove excess moisture, then cut into cubes.</li>
+          <li>In a bowl, mix soy sauce and mirin, then toss tofu in the sauce.</li>
+          <li>Top with green onions and sesame seeds before serving.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="zenzai-recipe" data-category="zenzai">
+        <img src="img\zenzai.jpg" alt="Zenzai">
+        <h3>Zenzai Recipe</h3>
+        <p>Sweet red bean soup served with mochi.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 cup azuki beans</li>
+          <li>3 cups water</li>
+          <li>1/2 cup sugar</li>
+          <li>4 small mochi (rice cakes)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Cook azuki beans in water until soft, then drain and add fresh water.</li>
+          <li>Stir in sugar and simmer until beans are tender and mixture thickens.</li>
+          <li>Grill or toast mochi until puffed, then add to soup and serve warm.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="oshiruko-recipe" data-category="oshiruko">
+        <img src="img\oshiruko.jpg" alt="Oshiruko">
+        <h3>Oshiruko Recipe</h3>
+        <p>Sweet azuki bean soup, often served with rice cakes.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 cup azuki beans</li>
+          <li>4 cups water</li>
+          <li>1/2 cup sugar</li>
+          <li>2 mochi (rice cakes)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Boil azuki beans until soft, then add sugar and continue to simmer.</li>
+          <li>In a separate pan, heat mochi until soft or slightly toasted.</li>
+          <li>Serve bean soup hot with mochi on top or on the side.</li>
+        </ol>
+      </div>
+
+
+      <div class="recipe-item" id="maki-recipe" data-category="maki">
+        <img src="img\maki.jpg" alt="Maki">
+        <h3>Maki Recipe</h3>
+        <p>Classic rolled sushi with a variety of fillings.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>1 cup sushi rice, cooked</li>
+          <li>2 sheets nori (seaweed)</li>
+          <li>1/4 cucumber, sliced thinly</li>
+          <li>1/4 avocado, sliced</li>
+          <li>100g fresh fish (tuna or salmon), sliced</li>
+          <li>Soy sauce and wasabi (for serving)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Place a sheet of nori on a bamboo sushi mat, shiny side down.</li>
+          <li>Spread a thin layer of sushi rice evenly over the nori, leaving a small border at the top.</li>
+          <li>Arrange cucumber, avocado, and fish slices along the center of the rice.</li>
+          <li>Roll up tightly using the mat, pressing firmly to seal.</li>
+          <li>Slice into bite-sized pieces and serve with soy sauce and wasabi.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="chawanmushi-recipe" data-category="chawanmushi">
+        <img src="img\chawanmushi.jpg" alt="chawanmushi">
+        <h3>Chawanmushi Recipe</h3>
+        <p>Steamed egg custard with savory toppings.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>2 eggs</li>
+          <li>1 cup dashi (Japanese broth)</li>
+          <li>1 tsp soy sauce</li>
+          <li>1 tsp mirin</li>
+          <li>Small pieces of chicken, shrimp, or mushrooms (for toppings)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>In a bowl, gently whisk eggs with dashi, soy sauce, and mirin.</li>
+          <li>Strain the mixture to remove bubbles, ensuring a smooth custard.</li>
+          <li>Place chicken, shrimp, or mushrooms in small heatproof cups.</li>
+          <li>Pour the egg mixture over the toppings and cover each cup with foil.</li>
+          <li>Steam for 10–15 minutes until the custard is set. Serve warm.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-item" id="tonkatsu-recipe" data-category="tonkatsu">
+        <img src="img\tonkatsu.jpg" alt="tonkatsu">
+        <h3>Tonkatsu Recipe</h3>
+        <p>Crispy breaded pork cutlet served with shredded cabbage.</p>
+        <h4>Ingredients:</h4>
+        <ul>
+          <li>2 pork cutlets</li>
+          <li>Salt and pepper</li>
+          <li>1/4 cup all-purpose flour</li>
+          <li>1 egg, beaten</li>
+          <li>1/2 cup panko breadcrumbs</li>
+          <li>Oil for frying</li>
+          <li>Shredded cabbage (for serving)</li>
+        </ul>
+        <h4>Steps:</h4>
+        <ol>
+          <li>Season pork cutlets with salt and pepper, then coat with flour.</li>
+          <li>Dip cutlets in beaten egg, then coat with panko breadcrumbs.</li>
+          <li>Heat oil in a pan and fry the cutlets until golden brown and crispy.</li>
+          <li>Drain on paper towels, slice, and serve with shredded cabbage.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 Japanese Recipes. All rights reserved.</p>
+</footer>
+
+<!-- Link to External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
